@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins - The Automation King</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #6b73ff);
+            background-size: 400% 400%;
+            animation: bgAnimation 10s infinite alternate ease-in-out;
+        }
+
+        @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .logo {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            color: #eee;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 75, 43, 0.5);
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 75, 43, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg" alt="Jenkins Logo" class="logo">
+        <h1>Jenkins - The Leading Automation Server</h1>
+        <p>
+            Jenkins is a powerful open-source automation server, helping developers build, test, 
+            and deploy applications efficiently. It supports continuous integration (CI) and 
+            continuous delivery (CD), streamlining software development workflows.
+        </p>
+        <a href="https://www.jenkins.io" class="btn" target="_blank">Learn More</a>
+    </div>
+</body>
+</html>
